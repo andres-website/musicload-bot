@@ -7,7 +7,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"musicorginizer/bot"
+	"github.com/andres-website/musicload-bot/bot"
 
 	"github.com/kylelemons/go-gypsy/yaml"
 )

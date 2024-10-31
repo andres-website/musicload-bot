@@ -2,7 +2,8 @@ package bot
 
 import (
 	"fmt"
-	"musicorginizer/downloader"
+
+	"github.com/andres-website/musicload-bot/downloader"
 )
 
 func (t *TelegramBot) mailoutDownloads() {

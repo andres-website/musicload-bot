@@ -1,0 +1,30 @@
+# github.com/Andreychik32/ytdl v1.0.4
+## explicit; go 1.14
+github.com/Andreychik32/ytdl
+# github.com/Syfaro/telegram-bot-api v4.6.4+incompatible
+## explicit
+github.com/Syfaro/telegram-bot-api
+# github.com/antchfx/jsonquery v1.1.4
+## explicit; go 1.14
+github.com/antchfx/jsonquery
+# github.com/antchfx/xpath v1.1.7
+## explicit
+github.com/antchfx/xpath
+# github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
+## explicit
+github.com/golang/groupcache/lru
+# github.com/kylelemons/go-gypsy v1.0.0
+## explicit; go 1.5
+github.com/kylelemons/go-gypsy/yaml
+# github.com/pkg/errors v0.9.1
+## explicit
+github.com/pkg/errors
+# github.com/rs/zerolog v1.19.0
+## explicit
+github.com/rs/zerolog
+github.com/rs/zerolog/internal/cbor
+github.com/rs/zerolog/internal/json
+github.com/rs/zerolog/log
+# github.com/technoweenie/multipartstreamer v1.0.1
+## explicit
+github.com/technoweenie/multipartstreamer

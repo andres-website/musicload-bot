@@ -3,14 +3,15 @@ package youtube
 import (
 	"context"
 	"fmt"
-	"musicorginizer/downloader"
 	"os"
 	"regexp"
 	"strings"
 	"time"
 
+	"github.com/andres-website/musicload-bot/downloader"
+
+	"github.com/Andreychik32/ytdl"
 	"github.com/pkg/errors"
-	"github.com/rylio/ytdl"
 
 	"os/exec"
 )
@@ -38,7 +39,7 @@ func NewDownloader(maxVideoDuration int64) (*Downloader, error) {
 }
 
 func (d *Downloader) Download(ctx context.Context, url string) (string, error) {
-	info, err := ytdl.GetVideoInfo(url)
+	info, err := ytdl.GetVideoInfo(ctx, url)
 	if err != nil {
 		return "", errors.Wrap(err, "error getting video info")
 	}

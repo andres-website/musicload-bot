@@ -2,10 +2,11 @@ package bot
 
 import (
 	"fmt"
-	"musicorginizer/downloader"
-	"musicorginizer/downloader/youtube"
-	"musicorginizer/queue"
 	"os"
+
+	"github.com/andres-website/musicload-bot/downloader"
+	"github.com/andres-website/musicload-bot/downloader/youtube"
+	"github.com/andres-website/musicload-bot/queue"
 
 	tgbotapi "github.com/Syfaro/telegram-bot-api"
 )
