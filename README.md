@@ -14,6 +14,5 @@ Simple Telegram Bot written in Go that downloads mp3 from Youtube videos.
 
 0. Rename config.yaml.example -> config.yaml
 1. Set your bot's token, username and other settings in config.yaml, than execute:
-2. `dep ensure` 2024???
-3. `make build`
-4. `make run`
+2. `make build`
+3. `make run`
