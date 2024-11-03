@@ -1,15 +1,18 @@
 token: 7169955608:AAEVN9pW0Ct-nmehweXvCuNEy2DZXmsfNg8
 
-#seconds
+# seconds
 max_download_time: 30
 
-#minutes
+# minutes
 max_video_duration: 60
 
-#tgbotapi logger
+# tgbotapi logger
 debug: false
 
-#custom logger
+# custom logger
 logging: true
 
 bot_username: noti_trade_bot
+
+# proxy
+proxy: http://user:pass@5.35.103.157:8888
