@@ -52,7 +52,8 @@ func (d *Downloader) Download(ctx context.Context, url string) (string, error) {
 	strings.Replace(filename, " ", "\\ ", 0)
 
 	// this command downloads video and extracts mp3
-	cmd := exec.CommandContext(ctx, "youtube-dl", "-x", "--audio-format", "mp3", url, "-o", filename+".%(ext)s")
+	// cmd := exec.CommandContext(ctx, "youtube-dl", "-f", "bestaudio[ext=webm]", url, "--throttled-rate", "500K", "-o", filename+".%(ext)s", "--user-agent", "Mozilla/5.0 (Android 14; Mobile; rv:128.0) Gecko/128.0 Firefox/128.0", "--proxy", "http://user:pass@0.0.0.0:8888")
+	cmd := exec.CommandContext(ctx, "youtube-dl", "-f", "bestaudio[ext=webm]", url, "--throttled-rate", "500K", "-o", filename+".%(ext)s", "--user-agent", "Mozilla/5.0 (Android 14; Mobile; rv:128.0) Gecko/128.0 Firefox/128.0")
 	data, err := cmd.CombinedOutput()
 	if err != nil {
 		os.Remove(filename)
