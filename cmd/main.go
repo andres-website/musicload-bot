@@ -49,6 +49,28 @@ func main() {
 		return
 	}
 
+	use_proxy, err := config.Get("use_proxy")
+	if err != nil {
+		log.Printf("Error parsing proxy value: %s\n", err.Error())
+		return
+	}
+	log.Printf("Parsing proxy value: "+ use_proxy +"\n")
+
+	proxy, err := config.Get("proxy")
+	if err != nil {
+		log.Printf("Error parsing proxy value: %s\n", err.Error())
+		return
+	}
+	log.Printf("Parsing proxy value: "+ proxy +"\n")
+
+	if use_proxy == "false" {
+		log.Printf("Not use proxy")
+	}
+
+	if proxy == "true" {
+		log.Printf("Use proxy")
+	}
+
 	b, err := bot.NewTelegramBot(token, maxDownloadTime, maxVideoDuration, botUsername)
 	if err != nil {
 		log.Printf("Error initializing bot: %s\n", err.Error())

@@ -1,4 +1,4 @@
-token: 7169955608:AAEVN9pW0Ct-nmehweXvCuNEy2DZXmsfNg8
+token: <token>
 
 # seconds
 max_download_time: 30
@@ -12,7 +12,7 @@ debug: false
 # custom logger
 logging: true
 
-bot_username: noti_trade_bot
+bot_username: <username>
 
 # proxy
-proxy: http://user:pass@5.35.103.157:8888
+proxy: http://user:pass@0.0.0.0:8888
