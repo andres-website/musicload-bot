@@ -15,5 +15,5 @@ logging: true
 bot_username: <username>
 
 # proxy address (proxy: http://user:pass@0.0.0.0:8888")
-use_proxy: true
+use_proxy: false
 proxy: http://user:pass@0.0.0.0:8888
