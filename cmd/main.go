@@ -14,8 +14,14 @@ import (
 )
 
 func main() {
-	//
+
+	// for Global varible: proxy_config.AppConfig
 	proxy_config.LoadConfig()
+
+	// # proxy settings log
+	log.Println("proxy_config.AppConfig:")
+	log.Println(proxy_config.AppConfig)
+	//
 
 	config, err := yaml.ReadFile("config.yaml")
 	if err != nil {
@@ -52,10 +58,6 @@ func main() {
 		log.Printf("Error parsing logging value: %s\n", err.Error())
 		return
 	}
-
-	// # proxy settings log
-	log.Println("proxy_config.AppConfig:")
-	log.Println(proxy_config.AppConfig)
 	//
 
 	b, err := bot.NewTelegramBot(token, maxDownloadTime, maxVideoDuration, botUsername)

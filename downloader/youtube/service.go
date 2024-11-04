@@ -82,6 +82,7 @@ func (d *Downloader) Download(ctx context.Context, url string) (string, error) {
 		// "--proxy", "http://user:pass@0.0.0.0:8888",
 	}
 
+	// from Global varible: proxy_config.AppConfig
 	use_proxy := proxy_config.AppConfig.UseProxy
 	// Добавляем параметр прокси, если use_proxy установлен
 	if use_proxy {
