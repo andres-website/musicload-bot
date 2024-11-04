@@ -8,8 +8,10 @@ import (
 )
 
 type Config struct {
-	UseProxy bool   `yaml:"use_proxy"`
-	Proxy    string `yaml:"proxy"`
+	UseProxy        bool   `yaml:"use_proxy"`
+	Proxy           string `yaml:"proxy"`
+	Use_youtube_api bool   `yaml:"use_youtube_api"`
+	Youtube_api_key string `yaml:"youtube_api_key"`
 }
 
 var AppConfig *Config

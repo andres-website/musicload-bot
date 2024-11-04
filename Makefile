@@ -4,4 +4,4 @@ build:
 	rm -f app
 
 run:
-	docker run --rm downloader/telegrambot 
+	docker run --memory="100m" --cpus="1" --rm downloader/telegrambot 

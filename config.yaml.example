@@ -17,3 +17,7 @@ bot_username: <username>
 # proxy address (proxy: http://user:pass@0.0.0.0:8888")
 use_proxy: false
 proxy: http://user:pass@0.0.0.0:8888
+
+# youtube api key (444erwerAuzKxD1Xa3pv2sdfdfIjiLr48GpfNg6w)
+use_youtube_api: false
+youtube_api_key: <youtube_api_key>
