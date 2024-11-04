@@ -12,4 +12,5 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rs/zerolog v1.19.0 // indirect
 	github.com/technoweenie/multipartstreamer v1.0.1 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
